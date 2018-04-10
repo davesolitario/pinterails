@@ -40,7 +40,7 @@ class PinsController < ApplicationController
 
 	def upvote
 		@pin.upvote_by current_user
-		redirect_back fallback_location: root_path
+		redirect_to @post
 	end
 
 	private
